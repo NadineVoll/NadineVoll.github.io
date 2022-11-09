@@ -236,7 +236,7 @@ img {
 }
 
 .Projekt {
-  text-align: center;
+  text-align: left;
   padding: 0;
   list-style: none;
   color: #404040;
@@ -250,7 +250,7 @@ img {
 }
 
 .Text_grey {
-  text-align: center;
+  text-align: left;
   padding: 0;
   list-style: none;
   color: #4040408e;
@@ -260,7 +260,7 @@ img {
 }
 
 .Text2 {
-  text-align: center;
+  text-align: left;
   padding: 0;
   padding-top: 20px;
   list-style: none;
