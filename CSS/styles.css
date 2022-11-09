@@ -155,7 +155,7 @@ img {
 .Kenntnisse,
 .Text {
   text-align: left;
-  justify-content: left;
+  justify-content: flex-start;
   padding: 0;
   list-style: none;
   color: #404040;
