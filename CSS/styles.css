@@ -222,8 +222,8 @@ img {
 .Portfolio {
   display: grid;
   grid-template-columns: 1fr;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   grid-gap: 1rem;
   align-items: top;
   padding-top: 20px;
