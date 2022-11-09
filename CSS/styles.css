@@ -154,8 +154,8 @@ img {
 .Auszeichnungen,
 .Kenntnisse,
 .Text {
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
   padding: 0;
   list-style: none;
   color: #404040;
