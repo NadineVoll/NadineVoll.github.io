@@ -1,0 +1,681 @@
+/*Mobile first design*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: white;
+  max-width: auto;
+  min-height: 100vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+p {
+  color: #404040;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.5rem 0.5rem;
+  white-space: pre;
+}
+
+#Impressum {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  line-height: 0.6rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+}
+
+.logo,
+.nav-menu {
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.nav-item {
+  flex: 1 0 10%;
+  text-align: center;
+}
+
+.logo a,
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem;
+  color: #404040;
+}
+
+.logo {
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #a3a153;
+}
+
+.logo a:hover {
+  color: #a3a153;
+}
+/*Home Seite*/
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1fr);
+  overflow: hidden;
+  grid-gap: 1rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 26px ;
+}
+
+.container {
+  position: relative;
+  width: relative;
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container:hover .gallery-img {
+  transform: scale(1.1);
+  filter: brightness(90%);
+}
+
+/*Über mich Seite*/
+.Übermich,
+.Einleitung {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.Porträt {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.Bezeichnung {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding: 0;
+  text-align: center;
+}
+
+.Abschnitt {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 0;
+  text-align: center;
+}
+
+.Trennstrich {
+  width: 100%;
+  color: #404040;
+  align-items: center;
+  padding: 0;
+}
+
+.Stichpunkte,
+.Zitat,
+.Werdegang,
+.Auszeichnungen,
+.Kenntnisse,
+.Text {
+  text-align: center;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  color: #404040;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
+.Zitat {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.Text_bold {
+  font-weight: bolder;
+}
+
+.Stichpunkte,
+.Auszeichnungen {
+  padding-bottom: 30px;
+}
+
+.Kenntnisse {
+  padding-bottom: 14px;
+}
+
+/*Kontakt Seite*/
+.Kontakt {
+  display: grid;
+  align-content: top;
+  justify-content: top;
+  grid-template-columns: 1fr;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top:10px;
+}
+
+.Profile {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 60px 80px;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.IN {
+  padding-top: 3px;
+}
+
+.Disziplin {
+  text-align: center;
+  list-style: square;
+  padding: 0;
+}
+
+.Bild {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*Portfolio Seite*/
+.Portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: top;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  object-fit: cover;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.Titel {
+  list-style: none;
+  color: #404040;
+}
+
+.Projekt {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  color: #404040;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+
+.Projektinfo {
+  padding: 0;
+}
+
+.Text_grey {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  color:  #888888;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
+.Text2 {
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+  list-style: none;
+  color: #404040;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.7rem;
+  font-weight: bold;
+}
+
+.Text_grey a{
+  text-decoration: none;
+  color: #888888;
+}
+
+.Text_grey a:hover{
+  text-decoration: none;
+  color: #a3a153;
+}
+
+.Text_grey a::after{
+  color: #404040;
+}
+
+.Projekt li b{
+  display: inline-block;
+  min-width: 0 px;
+}
+
+/*Tablet view*/
+@media (min-width: 635px) {
+  .header-nav {
+    line-height: 1.5rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1.5rem 1.2rem 1.5rem 1.2rem;
+  }
+  .nav-menu {
+    width: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .nav-item {
+    flex: 1 0 10%;
+    text-align: center;
+  }
+  .logo {
+    margin: 0 0 0 0.3rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left:40px;
+    margin-right: 36px;
+  }
+
+  .Bezeichnung {
+    font-size: 25px;
+    line-height: 2rem;
+  }
+  
+.Abschnitt {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+  .Stichpunkte,
+  .Zitat,
+  .Werdegang,
+  .Auszeichnungen,
+  .Kenntnisse,
+  .Text,
+  .Text_grey,
+  .Text2 {
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .Zitat {
+  margin-bottom: 10px;
+  }
+
+  .Stichpunkte,
+  .Auszeichnungen {
+    padding-bottom: 45px;
+  }
+  .Kenntnisse {
+    padding-bottom: 26px;
+  }
+  
+  .Kontakt {
+    grid-template-columns: 1fr;
+    align-items: top;
+    padding-bottom: 40px;
+  }
+
+  .Verlinkung {
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Trennstrich5 {
+    width: 70%;
+  }
+  .Portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:40px;
+    margin-right:40px;
+    grid-gap: 1rem;
+  }
+
+  .Titel {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-bottom: 0px;
+  }
+
+  .Projekttext {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .Einleitung {
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+
+  .Vorzeigebild1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .Vorzeigebild2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .Vorzeigebild3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .Vorzeigebild4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .Vorzeigebild5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .Vorzeigebild6 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .Vorzeigebild7 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .Bild {
+    margin-bottom: 12px;
+  }
+
+  .Profile {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 80px 112px;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+}
+
+/*Desktop view*/
+@media (min-width: 1100px) {
+  .header-nav {
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1.5rem 2.3rem 1.5rem 2.3rem;
+    margin: left 10px;
+  }
+  .nav-menu {
+    width: auto;
+  }
+  .logo {
+    margin: 0 0 0 0.3rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+  }
+
+  .Übermich {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+    align-items: top;
+  }
+  .Einleitung {
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
+    padding-bottom: 65px;
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+  }
+
+  .Zitat {
+    font-size: 24px;
+    line-height: 2.4rem;
+    padding-right:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  .Porträt {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .Bild{
+    padding-bottom: 0px;
+  }
+
+  .Bezeichnung {
+    padding: 0;
+    font-size: 28px;
+    line-height: 2rem;
+  }
+
+  .Abschnitt{
+    font-size: 26px;
+    line-height: 2rem;
+  }
+
+  .Stichpunkte,
+  .Auszeichnungen,
+  .Kenntnisse {
+    padding-right: 25px;
+    padding-top:0px;
+  }
+
+  .Stichpunkte,
+  .Werdegang,
+  .Auszeichnungen,
+  .Kenntnisse,
+  .Text,
+  .Text_grey,
+  .Text2 {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  .Portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+    grid-gap: 1rem;
+  }
+
+  .Titel {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-bottom: 30px;
+  }
+
+  .Projekttext {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .Vorzeigebild1 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+
+  .Vorzeigebild2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .Vorzeigebild3 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  .Vorzeigebild4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .Vorzeigebild5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+
+  .Abschnitt,
+  .Stichpunkte,
+  .Zitat,
+  .Werdegang,
+  .Auszeichnungen,
+  .Kenntnisse,
+  .Text,
+  .Text_bold,
+  .Text_grey{
+    text-align: left;
+  }
+
+  .Projekt li b{
+    display: inline-block;
+    min-width: 130px;
+  }
+
+  .Werdegang li b{
+    display: inline-block;
+    min-width: 130px;
+  }
+
+  .Profile {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 85px 120px;
+    justify-content: left;
+    grid-gap: 20px;
+  }
+
+  .Projekt{
+    padding-right: 10px;
+  }
+}
+
+/*Desktop view very wide*/
+@media (min-width: 1500px) {
+  .Zitat {
+    font-size: 36px;
+    line-height: 2.9rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0;
+  }
+  .Porträt {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .Bezeichnung {
+    padding: 0;
+    font-size: 34px;
+    line-height: 2rem;
+  }
+
+  .Stichpunkte,
+  .Werdegang,
+  .Auszeichnungen,
+  .Kenntnisse,
+  .Text,
+  .Text_grey,
+  .Text2 {
+    font-size: 24px;
+    line-height: 2.6rem;
+  }
+  .Stichpunkte {
+    line-height: 3.3rem;
+    font-size: 24px;
+
+  }
+  .Abschnitt,
+  .Stichpunkte,
+  .Zitat,
+  .Werdegang,
+  .Auszeichnungen,
+  .Kenntnisse,
+  .Text,
+  .Text_bold,
+  .Text_grey{
+    text-align: left;
+  }
+
+  .Projekt li b{
+    display: inline-block;
+    min-width: 170px;
+  }
+
+  .Werdegang li b{
+    display: inline-block;
+    min-width: 170px;
+  }
+
+  .Projekt{
+    padding-right: 10px;
+  }
+
+
+}
